@@ -1,0 +1,112 @@
+@media (max-width:450px) and (min-width:250px){
+    nav{
+        display: none;
+    }
+    .image img{
+        display: block;
+        height: 20px;
+        width: 100%;
+        
+    }
+    header{
+        display: block;
+    }
+    .desktop-header {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: none;
+        background: linear-gradient(to right, navy, lightblue) ;
+      }
+    .desktop-header .search-toggle{
+        display: flex;
+    }
+    .desktop-header .search-toggle{
+        display: flex;
+        gap: 2rem;
+        position: relative;
+    }
+    .desktop-header .search-toggle .slide-out{
+    display: inline-block;
+    
+    }
+    .slide-out-content{
+        font-size: 25px;
+        width: 80vw;
+        height: 120vh;
+        background-color: white;
+        margin-top: -2rem;
+        position: absolute;
+        display: none;
+    }
+    .desktop-header .search-toggle .slide-out:hover .slide-out-content{
+        display: block;
+        transition: all 1s ease-in-out;
+        /* transform: translateX(-170px); */
+        animation: toggle 2s ease-in-out both;
+    }
+    @keyframes toggle{
+        from{
+            transform: translateX(0);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(-200px);
+            opacity: 10;
+            
+        }
+    }
+    .all-nav .home{
+    display: flex;
+    justify-content: space-around;
+    line-height: 4rem;
+    border-bottom: 1px solid grey;
+    
+    
+    }
+    .fa-search, .fa-bars{
+    color: white;        
+    }
+    .sec1{
+        display: block;
+        clip-path: polygon(49% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 85%);
+        height: 63rem;
+    }
+    .sec1 .first-sec{
+        padding: 20px 20px;
+    }
+    .sec1 .first-sec :first-child{
+        font-size: 1rem;
+    }
+    .sec-sec{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: fit-content;
+        border-radius: 10px;
+        height: fit-content;
+        background-color: white;
+        padding: 20px 10px 30px;
+
+        margin: auto;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    h2{
+        width: 150px;
+        text-align: center;
+        margin: auto;
+    }
+    input{
+        height: 40px;
+        background-color: rgb(245, 240, 240);
+        outline: none;
+        border: none;
+    }
+    input::placeholder{
+        color: grey;
+        padding: 10px;
+    }
+}

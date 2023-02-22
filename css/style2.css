@@ -1,0 +1,128 @@
+@media (max-width:768px) and (min-width:450px){
+    nav{
+        display: none;
+    }
+    header{
+      display: block;
+ 
+    }
+    .image img{
+        display: block;
+    }
+    .desktop-header {
+      display: flex;
+      box-shadow: none;
+      background: linear-gradient(to right, rgb(12, 12, 236), rgba(0, 0, 255, 0.77)) ;
+      z-index: 999;
+    }
+    .desktop-header .search-toggle{
+        display: flex;
+        gap: 20px;
+        position: relative;
+ }
+ .desktop-header .search-toggle .slide-out{
+    display: inline-block;
+   
+ }
+    .slide-out-content{
+        font-size: 16px;
+        width: 80vw;
+        height: 120vh;
+        background-color: white;
+        margin-top: -2.5rem;
+        position: absolute;
+        display: none;
+    }
+    .desktop-header .search-toggle .slide-out:hover .slide-out-content{
+        display: block;
+        transition: all 1s;
+        /* transform: translateX(-170px); */
+        animation: toggle 1s both;
+    }
+    @keyframes toggle{
+        from{
+            transform: translateX(0);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(-300px);
+            opacity: 10;
+            
+        }
+    }
+.all-nav .home{
+    display: flex;
+    justify-content: space-around;
+    line-height: 3rem;
+    border-bottom: 1px solid grey;
+}
+.all-nav .home a{
+   text-decoration: none;
+   color: black;
+}
+.fa-search, .fa-bars{
+    color: white;
+}
+section{
+    height: 90rem;
+}
+.sec1{
+    display: block;
+    clip-path: polygon(49% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 85%);
+    height: 55rem;
+}
+.sec1 .first-sec{
+    padding: 30px 20px;
+}
+.sec1 .first-sec :first-child{
+    font-size: 1.8rem;
+}
+.sec-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+    border-radius: 10px;
+    height: fit-content;
+    background-color: white;
+    padding: 30px 15px 70px;
+    margin: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h2{
+    width: 150px;
+    text-align: center;
+    margin: auto;
+}
+input{
+    height: 40px;
+    background-color: rgb(245, 240, 240);
+    outline: none;
+    border: none;
+}
+input::placeholder{
+    color: grey;
+    padding: 10px;
+}
+
+.add-con-em{
+    display: flex;
+    flex-direction: column;
+}
+.address{
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    margin:15px auto;
+}
+.address p img{
+    width: 30px;
+}
+.add :first-child{
+    font-weight: 700;
+}
+}
